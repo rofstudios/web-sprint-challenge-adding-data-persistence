@@ -78,19 +78,19 @@ Build an API inside the `api` folder with endpoints for:
 - [+] `[GET] /api/resources`
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [+] `[POST] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
-- [ ] `[GET] /api/projects`
+- [+] `[GET] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
-- [ ] `[POST] /api/tasks`
+- [+] `[POST] /api/tasks`
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
-- [ ] `[GET] /api/tasks`
+- [+] `[GET] /api/tasks`
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Each task must include `project_name` and `project_description`
   - Example of response body: `[{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_name:"bar","project_description":null}]`
@@ -118,6 +118,10 @@ Build an API inside the `api` folder with endpoints for:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+    RD's are databases that can relation data between multiple tables. SQL's is the language in which Queries are made to DBs
 2. Why do tables need a Primary Key?
-3. What is the name given to a table column that references the Primary Key on another table?
+    Primary keys work as unique identifiers records in a Database
+3. What is the name given to a table column that references the Primary Key on another table? 
+    Foreign Key
 4. What do we need in order to have a _many to many_ relationship between two tables?
+    A third table that can communicate with both tables through foreign keys
