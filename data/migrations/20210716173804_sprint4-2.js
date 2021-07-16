@@ -28,6 +28,8 @@ exports.up = function (knex) {
 
         .createTable('project_resources', table => {
             table.increments('pr_id');
+            table.string('pr_assignment', 255).nullable();
+            table.string('pr_description', 255).nullable();
             table.integer('project_id')
                 .unsigned()
                 .notNullable()
